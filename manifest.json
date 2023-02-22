@@ -1,0 +1,19 @@
+{
+    "manifest_version": 3,
+    "name": "Auto Connect",
+    "version": "1.0",
+    "description": "Automated connection requester for LinkedIn",
+    "icons": {
+        "128": "img/icon50.png",
+        "48": "img/icon50.png",
+        "16": "img/icon50.png"
+    },
+    "action": {
+        "default_icon": "img/icon50.png",
+        "default_popup": "popup.html"
+    },
+    "permissions": [
+        "scripting"
+    ],
+    "host_permissions": ["https://www.linkedin.com/search/"]
+}
