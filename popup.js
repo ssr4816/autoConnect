@@ -12,9 +12,11 @@ async function connect() {
                 setTimeout(()=>{
                     if (buttons[i].innerText === 'Connect'){ //check if its a connect button
                         buttons[i].click(); // click on connect button
-                        document.getElementsByClassName("artdeco-button artdeco-button--2 artdeco-button--primary ember-view ml1")[0].click() // click on send button
+                        setTimeout(()=>{
+                            document.getElementsByClassName("artdeco-button artdeco-button--2 artdeco-button--primary ember-view ml1")[0].click() // click on send button
+                        },2000)
                     } 
-                },500);                
+                },5000);                
             }
         },
     });
